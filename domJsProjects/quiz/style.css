@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background: linear-gradient(135deg, #e0f2fe, #fef3c7);
+}
+
+.quiz-page {
+    width: min(920px, 92%);
+    margin: 0 auto;
+    padding: 48px 0;
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.tagline {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    color: #0f766e;
+    background: #ccfbf1;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 42px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.intro {
+    color: #4b5563;
+    font-size: 18px;
+}
+
+.quiz-card {
+    display: grid;
+    gap: 18px;
+}
+
+.question {
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.question h2 {
+    margin-bottom: 16px;
+    color: #111827;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #f9fafb;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+label:hover {
+    border-color: #14b8a6;
+    background: #f0fdfa;
+    transform: translateX(4px);
+}
+
+input {
+    margin-right: 10px;
+    accent-color: #0f766e;
+}
+
+button {
+    width: 100%;
+    padding: 15px 18px;
+    border: 0;
+    border-radius: 8px;
+    color: #ffffff;
+    background: #0f766e;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #115e59;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .quiz-page {
+        width: 94%;
+        padding: 28px 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .question {
+        padding: 18px;
+    }
+
+    .question h2 {
+        font-size: 18px;
+    }
+}
