@@ -16,6 +16,11 @@ form.addEventListener('submit',(e)=>{
     const parent = document.createElement('div');
     const task = document.createElement('span');
 
+    parent.style.border="2px solid white"
+    parent.style.margin="10px 20px"
+    parent.style.padding="10px 20px"
+
+
     task.textContent =text;
      task.style.marginRight ='50px'
 
