@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Insights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="card" aria-labelledby="page-title">
+            <h1 id="page-title">Astrology Insights</h1>
+
+            <form class="insights-form" id="astro-form">
+                <div class="field">
+                    <label for="first-name">First Name:</label>
+                    <input id="first-name" name="firstName" type="text" required>
+                </div>
+
+                <div class="field">
+                    <label for="surname">Surname:</label>
+                    <input id="surname" name="surname" type="text" required>
+                </div>
+
+                <div class="field">
+                    <label for="day">Date of Birth (Day):</label>
+                    <input id="day" name="day" type="text" inputmode="numeric" required>
+                </div>
+
+                <div class="field">
+                    <label for="month">Month:</label>
+                    <input id="month" name="month" type="text" required>
+                </div>
+
+                <div class="field">
+                    <label for="year">Year:</label>
+                    <input id="year" name="year" type="text" inputmode="numeric" required>
+                </div>
+
+                <button type="submit" class="btn">Get Insights</button>
+            </form>
+
+            <div class="result" id="results" ></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

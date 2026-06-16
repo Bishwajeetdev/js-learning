@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Profile Form</h1>
+    <p>Enter your information below to see it displayed in real-time:</p>
+
+    <form class="form" action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="text">Job Title:</label>
+        <input type="text" id="text" name="text" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0">
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea>
+
+        <!-- <button type="submit">Submit</button> -->
+    </form>
+
+    <div id="output">
+        <h3>Profile Preview</h3>
+        <p><strong>Name:</strong> <span id="output-name">Not Provided</span></p>
+        <p><strong>Job Title:</strong> <span id="output-job-title">Not Provided</span></p>
+        <p><strong>Age:</strong> <span id="output-age">Not Provided</span></p>
+        <p><strong>Bio:</strong> <span id="output-bio">Not Provided</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
