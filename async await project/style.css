@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+background-color: black;
+color: aliceblue;
+
+}
+#first{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.user{
+    width: 150px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 5px 10px;
+    padding: 10px;
+
+
+}
+img{
+    width: 80px;
+    /* height: 100px; */
+    object-fit: cover;
+}
+h2{
+    font-size: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: orange;
+}

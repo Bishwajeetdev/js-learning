@@ -78,64 +78,64 @@ console.log("program start from here")
 
 //zomate order process
 
-const orderDetails={
-    order_id:12345,
-    cost:620,
-    isPaymentDone:false,
-    customerName:"suraj",
-    customerLocation:"jaipur",
-    resturentLocation:"pratap Nagar",
-    orderItems:["pizza","biryani","Coke"]
-}
+// const orderDetails={
+//     order_id:12345,
+//     cost:620,
+//     isPaymentDone:false,
+//     customerName:"suraj",
+//     customerLocation:"jaipur",
+//     resturentLocation:"pratap Nagar",
+//     orderItems:["pizza","biryani","Coke"]
+// }
 
-function placedOder(orderDetails){
-    console.log(`Your payment is in process of ${orderDetails.cost}`)
+// function placedOder(orderDetails){
+//     console.log(`Your payment is in process of ${orderDetails.cost}`)
 
-    return new Promise((resolve,reject)=>{
-        setTimeout (()=>{
-        console.log(`your payemnt is done of ${orderDetails.cost}`);
-        orderDetails.isPaymentDone=true;
-        resolve(orderDetails);
-    },3000)
-    })
+//     return new Promise((resolve,reject)=>{
+//         setTimeout (()=>{
+//         console.log(`your payemnt is done of ${orderDetails.cost}`);
+//         orderDetails.isPaymentDone=true;
+//         resolve(orderDetails);
+//     },3000)
+//     })
 
    
     
-}
+// }
 
-function orderPreparation(orderDetails){
-    console.log(`we are preparing your order of ${orderDetails.orderItems}`)
+// function orderPreparation(orderDetails){
+//     console.log(`we are preparing your order of ${orderDetails.orderItems}`)
 
-  return new Promise((resolve, reject)=>{
-      setTimeout(() => {
-        console.log(`Your order is prepared now! ${orderDetails.order_id}`)
-       resolve(orderDetails);
-    }, 3000);
-  })
-}
+//   return new Promise((resolve, reject)=>{
+//       setTimeout(() => {
+//         console.log(`Your order is prepared now! ${orderDetails.order_id}`)
+//        resolve(orderDetails);
+//     }, 3000);
+//   })
+// }
 
-function pickup(orderDetails){
-    console.log(`Delivery boy is on the way to resturent ${orderDetails.resturentLocation} `)
-return new Promise((resolve,reject)=>{
-setTimeout(()=>{
-        console.log("Delivery boy has picked up your order")
-        resolve(orderDetails);
-    },3000)
-})
+// function pickup(orderDetails){
+//     console.log(`Delivery boy is on the way to resturent ${orderDetails.resturentLocation} `)
+// return new Promise((resolve,reject)=>{
+// setTimeout(()=>{
+//         console.log("Delivery boy has picked up your order")
+//         resolve(orderDetails);
+//     },3000)
+// })
     
-}
+// }
 
-function orderDelivery(orderDetails){
-    console.log(`I am on the way to deliver order to ${orderDetails.customerLocation}`);
+// function orderDelivery(orderDetails){
+//     console.log(`I am on the way to deliver order to ${orderDetails.customerLocation}`);
 
-    return new Promise((resolve,reject)=>{
-setTimeout(() => {
-        console.log(`Order delivered successfully to ${orderDetails.customerName}`)
-       orderDetails.delivery= true;
-        resolve(orderDetails);
-    }, 3000);
-    })
-}
+//     return new Promise((resolve,reject)=>{
+// setTimeout(() => {
+//         console.log(`Order delivered successfully to ${orderDetails.customerName}`)
+//        orderDetails.delivery= true;
+//         resolve(orderDetails);
+//     }, 3000);
+//     })
+// }
 
 //this is callback hell
 // placedOder(orderDetails,(orderDetails)=>{
@@ -148,19 +148,19 @@ setTimeout(() => {
 
 
 //callback hell solved here
-placedOder(orderDetails)
-.then((orderDetails)=>orderPreparation(orderDetails))
-.then((orderDetails)=>pickup(orderDetails))
-.then((orderDetails)=>orderDelivery(orderDetails))
-.then((orderDetails)=>{
-    console.log(orderDetails);
-})
-.catch((error)=>{
-console.log(`Error: ${error}`);
-}).
-finally(()=>{
-    console.log("i am doing cleanup")
-})
+// placedOder(orderDetails)
+// .then((orderDetails)=>orderPreparation(orderDetails))
+// .then((orderDetails)=>pickup(orderDetails))
+// .then((orderDetails)=>orderDelivery(orderDetails))
+// .then((orderDetails)=>{
+//     console.log(orderDetails);
+// })
+// .catch((error)=>{
+// console.log(`Error: ${error}`);
+// }).
+// finally(()=>{
+//     console.log("i am doing cleanup")
+// })
 
 
 
@@ -169,4 +169,11 @@ finally(()=>{
 
 
 
-console.log("program end here")
+// console.log("program end here")
+
+
+
+
+
+
+
