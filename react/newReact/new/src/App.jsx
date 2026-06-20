@@ -1,9 +1,11 @@
 import React from 'react'
 
 const App = () => {
+  let count =0;
   return (
     <div>
-      <h1>hello coder army</h1>
+      <p>Counter: {count}</p>
+      <button>increase</button>
     </div>
   )
 }
